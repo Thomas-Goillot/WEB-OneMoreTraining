@@ -1,0 +1,49 @@
+#avatar_preview {
+  position: relative;
+  width: 30vw;
+}
+
+img.superpose {
+  position: absolute;
+}
+
+.nav-list{
+  cursor: pointer;
+}
+
+.items{
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.item{
+  cursor: pointer;
+}
+
+#head {
+  z-index: 10;
+}
+
+#eyes {
+  z-index: 11;
+}
+
+#nose{
+  z-index: 11;
+}
+
+#mouth {
+  z-index: 11;
+}
+
+#brows {
+  z-index: 11;
+}
+
+.show{
+  display: flex !important;
+}
+
+.hide{
+  display: none !important;
+}

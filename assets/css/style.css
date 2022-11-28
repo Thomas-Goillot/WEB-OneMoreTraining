@@ -1,0 +1,264 @@
+/*
+--------------------------------------------------------
+OMT © 2022
+Thomas GOILLOT
+-------------------------------------------------------- 
+*/
+
+/* @font-face {
+  font-family: "MonumentExtended-Black";
+  src:url("/assets/font/MonumentExtended-Light.woff2") format("woff2"),
+      url("/assets/font/MonumentExtended-Light.woff") format("woff");
+}
+
+ */
+
+/*---------------------------------------------------------------------
+                               Supression Scroll bar
+-----------------------------------------------------------------------*/
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+/*---------------------------------------------------------------------
+                               navBar
+-----------------------------------------------------------------------*/
+
+.vertical { 
+  border-left: .25rem solid ; 
+  height: 70px; 
+  display: inline-block;
+  border-radius: 1rem;
+  margin: 0 1rem;
+} 
+
+.navbar-color{
+  transition: all .8s ease-in-out;
+}
+
+.form-control{
+  background: none;
+}
+
+/*---------------------------------------------------------------------
+                            multistep form
+-----------------------------------------------------------------------*/
+
+.tab {
+  display: none;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+
+/*---------------------------------------------------------------------
+                               Banner
+-----------------------------------------------------------------------*/
+
+.banner {
+  color: white;
+  height: 900px;
+  width: 100%;
+  margin: auto;
+  background-image: url("/assets/img/background_index.jpg");
+  display: table;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.content h1 {
+  text-shadow: 2px 0 0 rgba(51, 51, 51, 0.1), 2px 2px 0 rgba(51, 51, 51, 0.1), 0 2px 0 rgba(51, 51, 51, 0.1), -2px 2px 0 rgba(51, 51, 51, 0.1), -2px 0 0 rgba(51, 51, 51, 0.1), -2px -2px 0 rgba(51, 51, 51, 0.1), 0 -2px 0 rgba(51, 51, 51, 0.1), 2px -2px 0 rgba(51, 51, 51, 0.1);
+  font-size: 500%;
+}
+
+
+.rounded-circle{
+  width:10%;
+  border-radius: 100%;
+}
+
+.wrapper {
+  margin: 10vh;
+}
+
+/*---------------------------------------------------------------------
+                       Sign In | Sign Up
+-----------------------------------------------------------------------*/
+
+#sign-in-page-box { 
+  background: #fff; 
+  border-radius: 10px; 
+  position: relative; 
+  width: 100%; 
+  min-height: 480px; 
+  height: 93vh; 
+  margin: 15px auto; 
+  box-shadow: 0px 4px 20px 0px rgba(44, 101, 144, 0.1); 
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(44, 101, 144, 0.1); 
+}
+.sign-in-detail { 
+  color: var(--bs-white); 
+}
+.sign-in-page { 
+  height: 100vh; 
+  position: relative; 
+  background: url("/assets/img/background_index.jpg")  no-repeat scroll 0 0; 
+  background-size: cover; 
+}
+.sign-in-page .height-self-center { 
+  height: 100vh; 
+  border-radius: 15px; 
+}
+.sign-in-page-data { 
+  border-radius: 15px; 
+}
+.sign-in-detail { 
+  padding: 50px 80px; 
+}
+.sign-in-logo { 
+  display: inline-block; 
+  width: 100%;
+ }
+.sign-in-logo img { 
+  height: 50px; 
+}
+.sign-in-from { 
+  padding: 15px 30px; 
+  position: relative; 
+}
+.sign-info { 
+  padding-top: 0px;
+ }
+.iq-social-media { 
+  margin: 0; 
+  padding: 0; 
+  float: right; 
+}
+.iq-social-media li { 
+  list-style: none; 
+  float: left; 
+  margin-right: 10px; 
+}
+.iq-social-media li:last-child { 
+  margin-right: 0; 
+}
+
+.sign-in-page .btn {
+   padding: 10px 35px; 
+   width: 100%; 
+   border-radius: 5px; 
+  }
+.sign-user_card { 
+  position: relative; 
+  background: rgb(209 203 203 / 23%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); 
+  padding: 10px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  border-radius: 5px; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+.sign-in-page .form-control { 
+  color: var(  --bs-light); 
+}
+.sign-in-page .form-control:focus { 
+  background: transparent; 
+}
+
+:-ms-input-placeholder { 
+color: #d9d5d5 !important; 
+}
+::-ms-input-placeholder { 
+color: #d9d5d5 !important; 
+}
+
+.draggable{
+  cursor: move;
+}
+
+.draggable.dragging{
+  opacity: .5;
+}
+
+.bounce {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: bounce 1.2s ease-out infinite;
+	-moz-animation: bounce 800ms ease-out infinite;
+	-o-animation: bounce 800ms ease-out infinite;
+	animation: bounce 1.2s ease-out infinite;
+}
+
+/* Webkit, Chrome and Safari */
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform:translateY(-100%);
+	}
+	40% {
+		-webkit-transform:translateY(-60%);
+	}
+	50% {
+		-webkit-transform:translateY(-50%);
+	}
+	55% {
+		-webkit-transform:translateY(0%);
+	}
+	60% {
+		-webkit-transform:translateY(-30%);
+	}
+	65% {
+		-webkit-transform:translateY(0%);
+	}
+	70% {
+		-webkit-transform:translateY(-15%);
+	}
+	75% {
+		-webkit-transform:translateY(0);
+	}
+	80% {
+		-webkit-transform:translateY(-10%);
+	}
+	85% {
+		-webkit-transform:translateY(0);
+	}
+	90% {
+		-webkit-transform:translateY(-5%);
+	}
+	100% {
+		-webkit-transform:translateY(0);
+	}
+}
